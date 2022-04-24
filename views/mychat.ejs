@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Vue JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+  <!-- jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<%- include('partials/chatstyle') %>
+<body>
+  
+  <nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="/myaccount">HOME</a>
+      <a class="py-2 d-none d-md-inline-block" href="/linkcard">Link Card</a>
+      <a class="py-2 d-none d-md-inline-block" href="/linkbank">Link Bank</a>
+      <a class="py-2 d-none d-md-inline-block" href="/chat">Chat</a>
+      <a class="py-2 d-none d-md-inline-block" href="/" onclick="myfunction()">SUPPORT</a>
+      <a class="py-2 d-none d-md-inline-block" href="/">LOGOUT</a>
+      
+    </div>
+  </nav>
+  
+  <form action="/chat" method="post">
+    <div class="container mt-5">
+      <div class="headings">
+        <h2>Comments</h2>
+      </div>
+      
+          <% for(var i=0; i < comments.length; ++i){ %>
+            <div class="card p-3">
+                <span class="comment"><i class="far fa-user-circle fa-2x">  <%= comments[i] %></i><i class="far fa-thumbs-up fa-2x like"></i></span>
+            </div><br>
+            <% } %>
+          
+        
+     
+      <div class="bottom">
+        <textarea type="text" name="mycomment" class="mytextarea" placeholder="Write a comment" rows="2" cols="100"></textarea>
+        <button type="submit" class="btn btn-primary btn-lg mybutton">Post Comment</button>
+      </div>
+    
+    </div>
+  </form>
+
+
+
+</body>
+
+</html>

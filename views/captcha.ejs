@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<%- include('partials/captchastyle') %>
+<body>
+    <form id="recaptchaform">
+        <div class="g-recaptcha" data-sitekey="6LflXGEdAAAAAAdp1sfqoZU1jSeidxE0YSOidaiF"></div>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("recaptchaform").addEventListener('submit', submitForm);
+
+        function submitForm(e){
+            e.preventDefault();
+            const captcha = document.querySelector('#g-recaptcha-response').value;
+            fetch("/recaptcha", {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify({captcha: captcha})
+            })
+            .then((res) => res.json())
+            .then((data) => {
+               console.log(data);
+               alert(data.msg);
+            });
+        }
+    </script>
+</body>
+</html>
