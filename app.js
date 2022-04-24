@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 // app.use(passport.initialize());
 // app.use(passport.session());
 
-const mongoURI = "mongodb+srv://vikash-admin:vikash1234@cluster0.sgpni.mongodb.net/UserDB";
+const mongoURI = "mongodb+srv://nitin-admin:<password>@cluster0.sgpni.mongodb.net/UserDB";
 
 
 mongoose.connect(mongoURI,{useNewUrlParser: true}).then((res) =>{
