@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+}
+
+.top-container {
+    background-image: url('coffee.jpg');
+    height: 550px;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.onepay {
+    margin-left: 100px;
+}
+
+.main {
+    position: fixed;
+}
+
+h1 {
+    display: inline-block;
+    color: #fff;
+    size: 5rem;
+}
+
+
+
+
+.login-btn {
+	background-color:transparent;
+	border-radius:28px;
+	border:2px solid #fff;;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:14px 39px;
+    text-decoration:none;
+    margin-right: 40px;
+}
+.login-btn:hover {
+    background-color:transparent;
+    color: #fff;
+}
+.login-btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.signup-btn {
+	background-color:transparent;
+	border-radius:28px;
+	border:2px solid #fff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:14px 33px;
+	text-decoration:none;
+}
+.signup-btn:hover {
+    background-color:transparent;
+    color: #fff;
+}
+.signup-btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.line{
+    border-top: 1px dotted;
+    color: #fff;
+    text-align: center;
+    width:100%;
+}
+
+.wel {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.welcome {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto 0 auto;
+}
+
+.login-btn2 {
+    background-color:blueviolet;
+	border-radius:28px;
+    display:inline-block;
+    cursor: pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+    padding:14px 120px;
+    text-align: center;
+}
+.login-btn2:hover {
+	color: #fff;
+}
+
+.dont-message {
+    color: #cd0a0a;
+    font-size: 20px;
+    margin-top: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.enhance-message {
+    font-size: 2rem;
+    color: #fff;
+    
+}
+
+.middle-container{
+    background-color: #f6f6f6;
+    height: 500px;
+    width: 100%;
+    padding: 40px;
+}
+
+.bottom-container {
+    background-color: #d6e0f0;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+i {
+    margin: 20px;
+}
+
+.fab:hover{
+    color: blue;
+}
+
+/* media query*/
+@media (max-width: 1000px){
+    .sub-heading{
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px){
+    .top-container {
+        height: 700px;
+    }
+}
+
+@media (min-width: 800px){
+    body {
+        text-align: center;
+    }
+}

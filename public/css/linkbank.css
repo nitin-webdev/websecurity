@@ -1,0 +1,69 @@
+.container {
+    max-width: 960px;
+    height: 35px;
+}
+  
+  
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    
+}
+  
+.site-header a {
+    color: #999;
+    
+}
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkbank {
+      margin-top: 75px;
+}
+
+.bank-details {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+  .bank-details {
+    font-weight: 400;
+}
+.bank-details .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.bank-details .form-control:focus {
+    z-index: 2;
+}
+.bank-details input[type="text"] {
+    margin-bottom: 2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.bank-details select {
+    margin-bottom: 2px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.yourdetails {
+      padding: 20px;
+      width: 300px;
+}
+
+.btn {
+      margin-top: 10px;
+      
+}
+
+p {
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+}
